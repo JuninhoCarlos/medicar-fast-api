@@ -4,4 +4,6 @@ disable=abstract-method,
         arguments-differ,        
         missing-docstring,        
         pointless-string-statement,
-        useless-super-delegation
+        useless-super-delegation,
+        no-name-in-module
+        
