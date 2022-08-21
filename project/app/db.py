@@ -10,4 +10,4 @@ def init_db():
 
 
 def get_session(engine=Depends(init_db)):
-    return sessionmaker(bind=engine)()
+    return sessionmaker(bind=engine)(future=True)
