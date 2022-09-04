@@ -1,11 +1,12 @@
 """create a doctor table
 
 Revision ID: 1e2e4218138a
-Revises: 
+Revises:
 Create Date: 2022-07-30 13:24:38.628153
 
 """
 import sqlalchemy as sa
+
 from alembic import op
 
 # revision identifiers, used by Alembic.

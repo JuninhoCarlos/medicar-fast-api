@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 from app.adapters import orm
 from app.db import init_db
-from app.routes import ping
+from app.routes import doctor, ping
 
 log = logging.getLogger("uvicorn")
 orm.start_mappers()
@@ -14,6 +14,7 @@ def create_application() -> FastAPI:
     application = FastAPI()
 
     application.include_router(ping.router)
+    application.include_router(doctor.router)
 
     return application
 

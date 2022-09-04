@@ -1,9 +1,10 @@
 [MASTER]
+# Ignores alembic migrations
+ignore-patterns=*/alembic/versions/*.py
 
-disable=abstract-method,        
-        arguments-differ,        
-        missing-docstring,        
+disable=abstract-method,
+        arguments-differ,
+        missing-docstring,
         pointless-string-statement,
         useless-super-delegation,
         no-name-in-module
-        
